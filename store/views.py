@@ -2,8 +2,7 @@ from django.shortcuts import render
 from django.http import HttpResponse
 
 def home(request):
-    return HttpResponse('<h1>Home</h1>')
+    return render(request, 'home.html')
 
 def aboutPage(request):
-    return HttpResponse('<h1>Page was found,  ABOUT </h1>')    
-
+    return render(request, 'about.html')
