@@ -4,6 +4,10 @@ Welcome amorawskanew,
 
 <h2>Used Materials</h2>
 
+1. Bootstrap 4 Cheat Sheet
+https://hackerthemes.com/bootstrap-cheatsheet/
+https://bootstrapcreative.com/resources/bootstrap-4-css-classes-index/
+
 
 
 
@@ -17,3 +21,8 @@ I opened the project and navidated to accounts/login. I tried to login using sup
 3. I created a folder templates to contain all my html files, because django will look for temaplates by default
 
 4. Creating home and about pages and testing them in a browser.
+
+
+Installed packages
+
+pip3 install Pillow
