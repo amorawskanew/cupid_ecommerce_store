@@ -4,12 +4,12 @@ from .models import Category, Product
 
 def home(request, category_slug=None):
     category_page = None
-    products_list = None
+    products = None
     if category_slug != None:
         category_page = get_object_or_404(Category, slug=category_slug)
-        products_list = Product.objects.filter(category=category_page, available=True)
+        products = Product.objects.filter(category=category_page, available=True)
     else:
-        products_list = Product.objects.all().filter(available=True)
+        products = Product.objects.all().filter(available=True)
 
 
     return render(request, 'home.html', {'category': category_page, 'products': products})

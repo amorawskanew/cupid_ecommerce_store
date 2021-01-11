@@ -5,11 +5,15 @@ Product
 {% endblock %}
 
 
+
+
+
+
 {% block content %}
 <div class="container py-5">
   <div class="row mt-5">
     <div class="col-10 mx-auto col-md-6 my-3">
-      <img src="{% static 'img/flowers_7.jpg' %}" alt="">
+      <img src="{{product.image.url}}" alt="">
     </div>
     <div class="col-10 mx-auto col-md-6 my-3">
       <div>

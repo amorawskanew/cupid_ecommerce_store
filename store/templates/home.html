@@ -4,7 +4,7 @@
 Home
 {% endblock %}
 {% block content %}
-<div class="container-fluid">
+  <div class="container-fluid">
     <div class="row">
       <img style="width: 100%" src="{% static 'img/hero.png' %}" alt="">
     </div>
@@ -27,7 +27,7 @@ Home
       <div class="col-9 mx-auto col-md-6 col-lg-3">
         <div class="card mb-4" style="border-color: transparent;">
           <div class="p-4">
-            <a href="{{product.get_url}}">
+            <a href="{{product.get_url}}"></a>
               <img src="{{product.image.url}}" class="card-img-top" alt="{{product.name}}">
             </a>
 
@@ -56,5 +56,5 @@ Home
     </div>
     <br>
   </div>
-<h1>Home Page</h1>
+
 {% endblock %}

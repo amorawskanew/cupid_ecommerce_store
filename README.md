@@ -8,6 +8,9 @@ Welcome amorawskanew,
 https://hackerthemes.com/bootstrap-cheatsheet/
 https://bootstrapcreative.com/resources/bootstrap-4-css-classes-index/
 
+2. Footer-taken from bootstrap4 and modified
+https://mdbootstrap.com/docs/standard/navigation/footer/
+
 
 
 
@@ -23,6 +26,5 @@ I opened the project and navidated to accounts/login. I tried to login using sup
 4. Creating home and about pages and testing them in a browser.
 
 
-Installed packages
-
+<h2>Installed packages</h2>
 pip3 install Pillow
