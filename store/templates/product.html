@@ -4,34 +4,29 @@
 Product
 {% endblock %}
 
-
-
-
-
-
 {% block content %}
 <div class="container py-5">
   <div class="row mt-5">
     <div class="col-10 mx-auto col-md-6 my-3">
-      <img src="{% static 'img/flowers_7.jpg' %}" alt="">
+      <img src="{{product.image.url}}" alt="">
     </div>
     <div class="col-10 mx-auto col-md-6 my-3">
       <div>
-        <h1 class="product_title">red flowers</h1>
+        <h1 class="product_title">{{product.name}}</h1>
         <h5 class="text-info font-italic mb-3">
-          <span class="mr-1">$</span> price 400$
+          <span class="mr-1">$</span> {{product.price}}
         </h5>
         <p class="product_description">Product Description</p>
-        <p class="text-justify product_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. "</p>
-        
+        <p class="text-justify product_text">{{product.description}}</p>
+        {% if product.stock <= 0 %}
         <p class="text-justify product_text"><b>Out of Stock</b></p>
-        
-        <a >
+        {% else %}
+        <a href="{% url 'add_cart' product.id %}">
           <button type="button" name="button" class="btn btn-secondary">
             Add to Cart
           </button>
           </a>
-        
+        {% endif %}
       </div>
     </div>
   </div>
@@ -40,10 +35,10 @@ Product
   <div class="card-header">
     <h4>Reviews</h4>
   </div>
-  
+  {% if user.is_authenticated %}
   <div class="card-body">
     <form method="post">
-      
+      {% csrf_token %}
       <div class="form-group">
         <textarea name="content" class="form-control"></textarea>
       </div>
@@ -52,21 +47,27 @@ Product
       </div>
     </form>
   </div>
-  
+  {% endif %}
 
-  
+  {% if reviews.count > 0 %}
   <ul class="list-group list-group-flush">
-   
-       <li class="list-group-item"> <h5></h5>
-       <p class="card-text"></p>
+   {% for review in reviews %}
+       <li class="list-group-item"> <h5>{{review.user.username}}</h5>
+       <p class="card-text">{{review.content}}</p>
        </li>
-   
+   {% endfor %}
  </ul>
 
- 
+  {% endif %}
 
 
 </div>
 
 </div>
+
+
+{% endblock %}
+
+
+
 {% endblock %}
