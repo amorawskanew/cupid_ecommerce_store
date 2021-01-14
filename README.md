@@ -25,6 +25,8 @@ I opened the project and navidated to accounts/login. I tried to login using sup
 
 4. Creating home and about pages and testing them in a browser.
 
+5. testing responsivness of desktop and mobile navbar in chrome dev tool by checking if all the features are nicely displayed on different screen sizes.
+
 
 <h2>Installed packages</h2>
 pip3 install Pillow
