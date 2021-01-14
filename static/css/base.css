@@ -46,6 +46,13 @@ body {
     width: 1.5rem;
 }
 
+ /* hover effect  */
+.icon:hover {
+    color: rgb(158, 33, 81);
+}
+
+}
+
 .logo-font {
     text-transform: uppercase;
 }
@@ -66,16 +73,16 @@ body {
     color: white;
 }
 
-.shop-now-button:hover
-{
-    background: rgb(158, 31, 80);
-    color: white;
-    min-width: 200x;
-    
-}
 
 .shop-now-button:active,
 .shop-now-button:focus,
+.shop-now-button:hover{
+
+    background: rgb(158, 33, 81);
+    color: white;
+    min-width: 200x; 
+}
+
 .btn-black:hover,
 .btn-black:active,
 .btn-black:focus {
@@ -83,20 +90,29 @@ body {
     color: white;
 }
 
+/* light grey text */
 .text-color {
     color: rgb(92, 96, 100);
  }  
 
- .text-color-gdark-grey{
+
+/* dark grey tfor navbar icones and some text */
+ .text-icone-color{
     color: rgb(58, 60, 63);
- }  
+ } 
  
- 
+.text-icone-color:active,
+.text-icone-color:focus,
+.text-icone-color:hover{
+    color:rgb(158, 33, 81);
+
 .border-black {
     border: 1px solid black !important;
 }
 
-.dino {
+ /* making home page container sticky  */
+
+.dino{
   position: -webkit-sticky;
   position: sticky;
   bottom: 0;
