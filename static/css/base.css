@@ -1,0 +1,212 @@
+
+/* Container holding the text and the button */
+.container {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+/* Position button */
+.centered_button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+} 
+ /* Position text */
+.centered_text {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: rgb(92, 96, 100);
+} 
+
+ /* Babkground image */
+
+html {
+    height: 100%;
+}
+
+body {
+    background: url('/media/hero_image1.jpg')  no-repeat center fixed ;
+    background-size: cover;
+    height: calc(100vh);
+    color: #555;
+    font-family: 'Lato';
+    width: 100%;
+}
+
+/* from Bulma */
+.icon {
+    align-items: center;
+    display: inline-flex;
+    justify-content: center;
+    height: 1.5rem;
+    width: 1.5rem;
+}
+
+.logo-font {
+    text-transform: uppercase;
+}
+
+.main-logo-link {
+    width: fit-content;
+}
+
+.shop-now-button {
+    background: rgb(92, 96, 100);
+    color: white;
+    min-width: 200px;
+    
+}
+
+.btn-black {
+    background: black;
+    color: white;
+}
+
+.shop-now-button:hover
+{
+    background: rgb(158, 31, 80);
+    color: white;
+    min-width: 200x;
+    
+}
+
+.shop-now-button:active,
+.shop-now-button:focus,
+.btn-black:hover,
+.btn-black:active,
+.btn-black:focus {
+    background:  rgb(58, 60, 63);
+    color: white;
+}
+
+.text-color {
+    color: rgb(92, 96, 100);
+ }  
+
+ .text-color-gdark-grey{
+    color: rgb(58, 60, 63);
+ }  
+ 
+ 
+.border-black {
+    border: 1px solid black !important;
+}
+
+.dino {
+  position: -webkit-sticky;
+  position: sticky;
+  bottom: 0;
+  align-self: flex-end;
+}
+
+
+/* resize balloons image */
+img.resize {
+  max-width:240%;
+  max-height:240%;
+  margin-left: 0;
+}
+
+/* -------------------------------- Media Queries */
+
+/* Slightly larger container on xl screens */
+@media (min-width: 1200px) {
+  .container {
+    max-width: 80%;
+  }
+}
+
+
+
+/* fixed top navbar only on medium and up */
+@media (min-width: 992px) {
+    .fixed-top-desktop-only {
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        z-index: 1030;
+    }
+
+    .header-container {
+        padding-top: 164px;
+    }
+}
+
+
+/* fixed top navbar only on medium and up */
+@media (max-width: 480px) {
+    /* Centered button */
+.centered_button {
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+} 
+ /* Centered text */
+.centered_text {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+} 
+}
+
+
+
+
+
+/*text-animation*/
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.fadeIn {
+    transition-duration: 7s;
+    opacity: 0;
+    opacity: 1;
+    animation-duration: 9s;
+    animation-iteration-count: 1;
+    color: var(--mainOrange);
+}
+
+.fadeOut {
+    transition-duration: 7s;
+    opacity: 0;
+    opacity: 1;
+    animation-duration: 9s;
+    animation-iteration-count: 1;
+    color: var(--mainOrange);
+}
+
+h3 {
+    margin-top: 25px;
+    font-size: 21px;
+    text-align: center;
+    -webkit-animation: fadein 2s;
+    /* Safari, Chrome and Opera > 12.1 */
+    -moz-animation: fadein 2s;
+    /* Firefox < 16 */
+    -ms-animation: fadein 2s;
+    /* Internet Explorer */
+    -o-animation: fadein 2s;
+    /* Opera < 12.1 */
+    animation: fadein 2s;
+}
+
+@keyframes fadein {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+----
