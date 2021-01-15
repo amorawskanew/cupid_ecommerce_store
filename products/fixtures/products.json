@@ -176,7 +176,7 @@
 			"description": "Milk chocolate with nuts",
 			"price": 9.99,
 			"category": 2,
-			"image": "chocolates_5.jpeg"
+			"image": "chocolates_5.jpg"
 		}
 	},
 	{
@@ -344,8 +344,7 @@
 			"description": "Produced in Holland",
 			"price": 11.99,
 			"category": 3,
-			"rating": 4.6,
-			"image": "flowers_9.jpge"
+			"image": "flowers_9.jpeg"
 		}
 	},
 	{

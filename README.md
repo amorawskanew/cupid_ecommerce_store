@@ -11,6 +11,11 @@ https://bootstrapcreative.com/resources/bootstrap-4-css-classes-index/
 2. Footer-taken from bootstrap4 and modified
 https://mdbootstrap.com/docs/standard/navigation/footer/
 
+<h3>Validators</h3>
+The JSON Validator  https://jsonlint.com/
+
+
+
 
 
 
