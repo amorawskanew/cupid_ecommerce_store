@@ -27,6 +27,10 @@ I opened the project and navidated to accounts/login. I tried to login using sup
 
 5. testing responsivness of desktop and mobile navbar in chrome dev tool by checking if all the features are nicely displayed on different screen sizes.
 
+6. Tested json database with JSONLint https://jsonlint.com/ to check if it is properly written and matches category and product models.
+
 
 <h2>Installed packages</h2>
 pip3 install Pillow
+
+Creatied folders fixtures to load data into a django database very quickly, so we dont have to do it maniually in the admin,.
