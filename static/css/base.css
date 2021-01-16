@@ -52,37 +52,6 @@ body{
   color:#fff;
 }
 
-#section-a{
-  padding:20px;
-  background:#926239;
-  color:#fff;
-  text-align:center;
-}
-
-#section-b{
-  padding:20px;
-  background:#f4f4f4;
-  text-align:center;
-}
-
-#section-c{
-  display:flex;
-}
-
-#section-c div{
-  padding:20px;
-}
-
-#section-c .box-1, #section-c .box-3{
-  background:#926239;
-  color:#fff;
-}
-
-#section-c .box-2{
-  background:#f9f9f9;
-}
-
-
 ----------
 
 
@@ -165,28 +134,38 @@ body{
 
 
 .bg-white{
-    opacity: 20%;
+    opacity: 200%;
 }
 
-
- /* making home page container sticky  */
-
-.dino{
-  position: -webkit-sticky;
-  position: sticky;
-  bottom: 0;
-  align-self: flex-end;
+ .overlay {
+    background: url('/media/pink_background.jpg') no-repeat center center fixed;
+    background-size: cover;
+    height: calc(100vh - 164px);
+    color: #555;
+    font-family: 'Lato';
 }
 
-
-/* resize balloons image */
-img.resize {
-  max-width:240%;
-  max-height:240%;
-  margin-left: 0;
+/* -------------------------------- product_detail styling*/
+.product_title {     
+  font-size: 20px;
+  text-transform: uppercase;
+  letter-spacing: .2em;
+  padding-top: 15px;
+  padding-bottom: 10px;
 }
 
+.product_text {
+  padding-right: 20px;
+}
 
+.product_description {
+  font-size: 16px;
+  text-transform: uppercase;
+  letter-spacing: .2em;
+}
+.product_detail{
+    margin-top: 80px;
+}
 /* -------------------------------- Media Queries */
 
 /* Slightly larger container on xl screens */
@@ -207,87 +186,10 @@ img.resize {
         left: 0;
         z-index: 1030;
     }
-
-    .header-container {
-        padding-top: 164px;
-    }
-}
-
-
-/* fixed top navbar only on medium and up */
-@media (max-width: 480px) {
-    /* Centered button */
-.centered_button {
-  position: absolute;
-  top: 70%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-} 
- /* Centered text */
-.centered_text {
-  position: absolute;
-  top: 40%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-} 
 }
 
 
 
 
-
-/*text-animation*/
-
-* {
-    padding: 0;
-    margin: 0;
-}
-
-.fadeIn {
-    transition-duration: 7s;
-    opacity: 0;
-    opacity: 1;
-    animation-duration: 9s;
-    animation-iteration-count: 1;
-    color: var(--mainOrange);
-}
-
-.fadeOut {
-    transition-duration: 7s;
-    opacity: 0;
-    opacity: 1;
-    animation-duration: 9s;
-    animation-iteration-count: 1;
-    color: var(--mainOrange);
-}
-
-h3 {
-    margin-top: 25px;
-    font-size: 21px;
-    text-align: center;
-    -webkit-animation: fadein 2s;
-    /* Safari, Chrome and Opera > 12.1 */
-    -moz-animation: fadein 2s;
-    /* Firefox < 16 */
-    -ms-animation: fadein 2s;
-    /* Internet Explorer */
-    -o-animation: fadein 2s;
-    /* Opera < 12.1 */
-    animation: fadein 2s;
-}
-
-@keyframes fadein {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
-}
-
-.responsive {
-  width: 100%;
-  height: auto;
-----
 
 

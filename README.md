@@ -33,6 +33,10 @@ I opened the project and navidated to accounts/login. I tried to login using sup
 5. testing responsivness of desktop and mobile navbar in chrome dev tool by checking if all the features are nicely displayed on different screen sizes.
 
 6. Tested json database with JSONLint https://jsonlint.com/ to check if it is properly written and matches category and product models.
+7. Adding functionality to search bar and testing it by manuallu inserting key words from product description (search qurry working
+8.Filtering by categories
+
+
 
 
 <h2>Installed packages</h2>
