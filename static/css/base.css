@@ -1,3 +1,4 @@
+
 *{
   margin:0;
   padding:0;
@@ -52,9 +53,6 @@ body{
   color:#fff;
 }
 
-----------
-
-
 /* from Bulma R */
 .icon {
     align-items: center;
@@ -69,10 +67,9 @@ body{
     color: rgb(158, 33, 81);
 }
 
-}
-
 .logo-font {
-    text-transform: uppercase;
+    text-transform: uppercase !important;
+    text-decoration: none !important;
 }
 
 .main-logo-link {
@@ -123,26 +120,14 @@ body{
 .text-icone-color:focus,
 .text-icone-color:hover{
     color:rgb(158, 33, 81);
+}
 
 .text-black {
     color: #000 !important;
 }
 
-.border-black {
-    border: 1px solid black !important;
-}
-
-
 .bg-white{
     opacity: 200%;
-}
-
- .overlay {
-    background: url('/media/pink_background.jpg') no-repeat center center fixed;
-    background-size: cover;
-    height: calc(100vh - 164px);
-    color: #555;
-    font-family: 'Lato';
 }
 
 /* -------------------------------- product_detail styling*/
@@ -166,6 +151,23 @@ body{
 .product_detail{
     margin-top: 80px;
 }
+
+
+footer {
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   height: 30px;
+   text-align: center;
+   color: transparent;
+}
+
+.center_footer_text {
+    text-align: center;
+    padding-bottom: 8px;
+}
+
 /* -------------------------------- Media Queries */
 
 /* Slightly larger container on xl screens */

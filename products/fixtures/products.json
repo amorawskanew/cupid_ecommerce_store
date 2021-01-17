@@ -358,19 +358,20 @@
 			"category": 3,
 			"image": "flowers_10.jpeg"
 		}
-	},
-	{
+    },
+    {
 		"pk": 31,
 		"model": "products.product",
 		"fields": {
 			"sku": "pp5003690116",
-			"name": "Keyholder Denis.",
-			"description": " heavy",
-			"price": 11.29,
-			"category": 4,
-			"image": "key_holder_1.jpeg"
-		}
+			"name": "Keyholder Denis",
+			"description": "durable",
+			"price": 11.99,
+			"category": 3,
+            "image": "key_holder_1.jpeg"
+    }
 	},
+
 	{
 		"pk": 32,
 		"model": "products.product",

@@ -53,7 +53,11 @@ def all_products(request):
 
     }
 
-    return render(request, 'products/products.html', context)
+    #reviews = Review.objects.filter(product=product)
+
+    return render(request, 'products/products.html',
+    #{'product': product, 'reviews': reviews},
+     context)
 
 
 
