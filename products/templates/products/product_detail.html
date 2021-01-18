@@ -1,7 +1,3 @@
-
-
-
-
 {% extends 'base.html' %}
 {% load static %}
 {% block title %}
@@ -71,6 +67,15 @@ Products
         </h5>
         <p class="product_description ">Product Description:</p>
         <p class="text-justify product_text">{{product.description}}</p>
+        {% if product.stock <= 0 %}
+        <p class="text-justify product_text"><b>Out of Stock</b></p>
+        {% else %}
+        <a href="{% url 'add_cart' product.id %}">
+          <button type="button" name="button" class="btn btn-secondary">
+            Add to Cart
+          </button>
+          </a>
+        {% endif %}
       </div>
     </div>
   </div>

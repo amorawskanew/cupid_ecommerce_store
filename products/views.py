@@ -1,8 +1,9 @@
 from django.shortcuts import render, redirect, reverse, get_object_or_404
 from django.contrib import messages
 from django.contrib.auth.models import Group, User
-from .models import Product, Category
+from .models import Category, Product, Review
 from django.db.models import Q
+from django.core.exceptions import ObjectDoesNotExist
 
 # Create your views here.
 
@@ -70,14 +71,20 @@ def product_detail(request, product_id):
         'product': product,
        }
 
-
-
     if request.method == 'POST' and request.user.is_authenticated and request.POST['content'].strip() != '':
-        Review.objects.create(product=product,
-                              user=request.user,
-                              content=request.POST['content'])
-
-        reviews = Review.objects.filter(product=product)
+           
+        review = Review.objects.create(product=product,
+        
+            content=request.POST['content'])
+        review.save()                        
 
     return render(request, 'products/product_detail.html', context)
+
+
+
+
+
+
+
+
 
