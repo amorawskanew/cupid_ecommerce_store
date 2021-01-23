@@ -1,3 +1,4 @@
+
 from django.shortcuts import render, redirect, reverse, get_object_or_404
 from django.contrib import messages
 from django.contrib.auth.models import Group, User
@@ -79,7 +80,6 @@ def product_detail(request, product_id):
         review.save()                        
 
     return render(request, 'products/product_detail.html', context)
-
 
 
 

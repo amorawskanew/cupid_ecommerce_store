@@ -1,4 +1,5 @@
 
+
 """boutique_ado URL Configuration
 The `urlpatterns` list routes URLs to views. For more information please see:
     https://docs.djangoproject.com/en/3.0/topics/http/urls/
@@ -24,4 +25,5 @@ urlpatterns = [
     path('', include('home.urls')),
     path('products/', include('products.urls')),
     path('cart/', include('cart.urls')),
+    path('checkout/', include('checkout.urls')), #Add checkout url
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
