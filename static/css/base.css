@@ -238,4 +238,31 @@ align-items:center;
 }
 
 
+@media (min-width: 991px) {
+  .cart_page {
+        margin-bottom: 200px!important;
+      
+  }
+}
+
+@media (max-width: 991px) {
+  .cart_page {
+     margin-bottom: 140px!important;
+     
+  }
+}
+
+@media (min-width: 991px) {
+  .cart_page {
+        margin-bottom: 200px!important;
+      
+  }
+}
+
+@media (max-width: 991px) {
+  .cart_page {
+     margin-bottom: 140px!important;
+     
+  }
+}
 
