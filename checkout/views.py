@@ -4,6 +4,42 @@ from django.conf import settings
 from django.core.mail import send_mail 
 from  django.template.loader import render_to_string
 from django.contrib.auth.decorators import login_required
+from django.shortcuts import  reverse
+from django.contrib import messages
+
+
+
+from django.shortcuts import render, redirect, reverse
+from django.contrib import messages
+from django.conf import settings
+
+from .forms import OrderForm
+from cart.contexts import cart_contents
+
+import stripe
+
+
+  
+from django.shortcuts import render, redirect, reverse
+from django.contrib import messages
+
+from .forms import OrderForm
+
+
+def checkout(request):
+    cart = request.session.get('cart', {})
+    if not cart:
+        messages.error(request, "There's nothing in your cart at the moment")
+        return redirect(reverse('products'))
+
+    order_form = OrderForm()
+    template = 'checkout/checkout.html'
+    context = {
+        'order_form': order_form,
+    }
+
+    return render(request, template, context)
+
 
 # Create your views here.
 
@@ -31,7 +67,7 @@ def stripeOpen(request):
                 "street_address1":"street_address1",
                 "town_or_city":"town_or_city",
                 "country":"country",
-                "phone_number":"phone_number",
+                
             }
             
         body = render_to_string('confirmation_emails/email_body.html',{
