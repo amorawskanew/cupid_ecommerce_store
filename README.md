@@ -11,6 +11,15 @@ https://bootstrapcreative.com/resources/bootstrap-4-css-classes-index/
 2. Footer-taken from bootstrap4 and modified
 https://mdbootstrap.com/docs/standard/navigation/footer/
 
+3. All the images were found on Google. I think I habve gone throught 50 to 60 various toy, chocolate, keyholders, flowers and pendants making companies.
+    *Bears:  https://www.google.com/search?q=bears+love&sxsrf=ALeKk00FoCv0GiP7ycyTnlGcQE85ZEQZrA:1611846582544&source=lnms&tbm=isch&sa=X&ved=2ahUKEwit_O-39L7uAhXMyKQKHUOUC-0Q_AUoAXoECBIQAw&biw=1319&bih=693
+    *Flowers:  https://www.google.com/search?q=red+roses+love&tbm=isch&ved=2ahUKEwj7j5O79b7uAhUYtKQKHZ1zBPEQ2-cCegQIABAA&oq=red+roses+love&gs_lcp=CgNpbWcQAzICCAAyAggAMgIIADICCAAyAggAMgIIADICCAAyAggAMgIIADIGCAAQCBAeOgcIIxDqAhAnOgQIIxAnOgQIABBDOgYIABAKEBhQihpYiUhg80toAnAAeACAAVCIAYQHkgECMTWYAQCgAQGqAQtnd3Mtd2l6LWltZ7ABCsABAQ&sclient=img&ei=ydQSYLuHM5jokgWd55GIDw&bih=693&biw=1319
+    *Keyholders: https://www.google.com/search?q=love+keyholder&sxsrf=ALeKk02VEBvBPZnuUgRRWWYieAW8rdzwnQ:1611846920942&source=lnms&tbm=isch&sa=X&ved=2ahUKEwjWqJ7Z9b7uAhVM_aQKHQJ2AyoQ_AUoAXoECAUQAw&biw=1319&bih=693
+    *https://www.google.com/search?q=chocolates+love&sxsrf=ALeKk01FsJtQAmt3AZYhIr7fTCZwri7p3Q:1611846995363&source=lnms&tbm=isch&sa=X&ved=2ahUKEwjdvtz89b7uAhUJ66QKHXZNCOMQ_AUoAXoECBQQAw&biw=1319&bih=693
+    *Pendants: https://www.google.com/search?q=pendants&sxsrf=ALeKk01j3V4-kUaweDA163nbnt2ljVQ47Q:1611847034950&source=lnms&tbm=isch&sa=X&ved=2ahUKEwj35MyP9r7uAhXB6aQKHTY-DQIQ_AUoAXoECBcQAw&biw=1319&bih=693
+
+
+
 <h3>Validators</h3>
 The JSON Validator  https://jsonlint.com/
 
@@ -63,6 +72,12 @@ If the form is valid we'll save the order.
 Which it did.
 And then let's check the admin to make sure the order was created properly.
 Here in the admin, I see the order created with all the expected line items.
+
+10. testingcard functionality using different card test number provided by stripe.
+
+11. testing loading ovrlay
+
+13.webhook_handlers
 
 
 
