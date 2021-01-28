@@ -36,6 +36,33 @@ I opened the project and navidated to accounts/login. I tried to login using sup
 7. Adding functionality to search bar and testing it by manuallu inserting key words from product description (search qurry working
 8.Filtering by categories
 
+8. I added a few products to my cart, then checked out
+ using the test card number from stripe.
+Everything went as expected and the form was submitted.
+To make sure the payment went through I went to my stripe account's Events and saw that the payment was created.
+
+<img src='/media/stripe_1.png' style="padding: 5px;">
+
+
+
+9. since the checkout view doesn't have any handling for the post method.
+Let's fix that in this video. So that when a user submits their payment information.
+We also create the order in the database.
+And redirect them to a success page.
+The first thing to do is obviously check whether the method is post.
+That means we should also wrap the current code into an else block to
+handle the get requests.
+In the post method code we will need the shopping bag.
+And then we'll put the form data into a dictionary.
+I'm doing this manually in order to skip the save infobox
+which doesn't have a field on the order model.
+All the other fields can come directly from the form though.
+And then we can create an instance of the form using the form data.
+If the form is valid we'll save the order.
+
+Which it did.
+And then let's check the admin to make sure the order was created properly.
+Here in the admin, I see the order created with all the expected line items.
 
 
 
