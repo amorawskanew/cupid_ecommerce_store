@@ -113,6 +113,8 @@ I repeated the same test with 2 other acrds:
     5555555555554444	Mastercard  CVC (Any 5 digits).  test: passed
     378282246310005	American Express CVC (Any 5 digits).  test: passed
 
+ 18. Testing checkout form with wrong details. I tested checkout form by purposely entering wrong information (wrong CVS-too short or too long, ..etc) or didn't provide required information like name or country. As expected each time I would get an error message.
+
 
 
 <h2>Installed packages</h2>
