@@ -77,7 +77,41 @@ Here in the admin, I see the order created with all the expected line items.
 
 11. testing loading ovrlay
 
-13.webhook_handlers
+13. webhook_handlers. 
+
+14. Veryfing that webhooks came from stripe. First, I set up the stripe API key and next
+the webhook secret which I needed to verify that the webhook actually came from stripe.
+To confirm the webhook view is working I printed out "success" in my terminal and then return a 200 response.
+
+<img src='/media/webhooks.png' style="margin: 0;">
+
+This means that anytime stripe sends me a webhook it lets me know that an event has occurred.
+I have effectively set up a listener to listen to messages from stripe.
+
+15. To verifying that my webhook work properly. Due to a faulty wh link my first attempts failed
+
+<img src='/media/webhooks_attemps.png' style="margin: 0;">
+
+16. Payment intent testing.    We're now passing information from our custom form to stripe securely
+via the payment intent.
+And recapturing it in the webhook so we can use it to add the order to our database.
+Now is a good time to commit our changes and in the next video you'll
+see the value of this webhook handler as
+we complete the code for it and test how our payment system would stand up to an
+impatient or unwitting user.
+In this video, we'll finalize that code and test it out.
+In the payment intent succeeded webhook handler we've already got the payment intent
+which has all our customers information in it.
+All we need to do is use it to create an order just like we did with the form.
+
+
+17. Testing payment system with a test card number provided by Stripe.
+I filled billing address form and used 4242424242424242 (CVC any 5 digits) test card numbers,a valid expiration date in the future, and a random CVC number. It all went well and a successful payment was created.
+
+I repeated the same test with 2 other acrds:
+
+    5555555555554444	Mastercard  CVC (Any 5 digits).  test: passed
+    378282246310005	American Express CVC (Any 5 digits).  test: passed
 
 
 
