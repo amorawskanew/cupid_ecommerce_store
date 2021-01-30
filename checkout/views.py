@@ -59,12 +59,12 @@ def checkout(request):
                         )
                         order_line_item.save()
                     else:
-                        for size, quantity in item_data['items_by_size'].items():
+                        for  quantity in item_data.items():
                             order_line_item = OrderLineItem(
                                 order=order,
                                 product=product,
                                 quantity=quantity,
-                                product_size=size,
+                                
                             )
                             order_line_item.save()
                 except Product.DoesNotExist:
@@ -81,8 +81,8 @@ def checkout(request):
             messages.error(request, 'There was an error with your form. \
                 Please double check your information.')
     else:
-        bag = request.session.get('cart', {})
-        if not bag:
+        cart = request.session.get('cart', {})
+        if not cart:
             messages.error(request, "There's nothing in your cart at the moment")
             return redirect(reverse('products'))
 
@@ -121,7 +121,7 @@ def checkout_success(request, order_number):
         Your order number is {order_number}. A confirmation \
         email will be sent to {order.email}.')
 
-    if 'bag' in request.session:
+    if 'cart' in request.session:
         del request.session['cart']
 
     template = 'checkout/checkout_success.html'

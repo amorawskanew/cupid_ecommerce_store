@@ -15,25 +15,7 @@
                 <hr class="mt-1 mb-3">
             </div>
         </div>
-        {% if grand_total and not on_profile_page %}
-            <p class="logo-font bg-white text-black py-1">Your Cart ({{ product_count }})</p>
-            <div class="bag-notification-wrapper">
-                {% for item in cart_items %}
-                    <div class="row">
-                        <div class="col-3 my-1">
-                            {% if item.product.image %}
-                            <img class="w-100" src="{{ item.product.image.url }}" alt="{{ item.product.name }}">
-                            {% else %}
-                            <img class="w-100" src="{{ MEDIA_URL }}noimage.png" alt="{{ item.product.name }}">
-                            {% endif %}
-                        </div>
-                        <div class="col-9">
-                            <p class="my-0"><strong>{{ item.product.name }}</strong></p>
-                            <p class="my-0 small text-muted">Qty: {{ item.quantity }}</p>
-                        </div>
-                    </div>
-                {% endfor %}
-            </div>
+     
             <div class="row">
                 <div class="col">
                     <strong><p class="mt-3 mb-1 text-black">
@@ -41,16 +23,8 @@
                         <span class="float-right">${{ total|floatformat:2 }}</span>
                     </p></strong>
                     
-                        <p class="mb-0 p-2 bg-grey shadow-sm text-black text-center" style="color: rgb(92, 96, 100);">
-                             Always Free Delivery!</strong>
-                        </p>
-                    {% endif %}
-                    <a href="{% url 'checkout' %}" class="btn btn-black btn-block rounded-2">
-                        <span class="text-uppercase">Go To Checkout</span>
-                        <span class="icon">
-                            <i class="fas fa-cart"></i>
-                        </span>
-                    </a>
+                        
+                    
                 </div>
             </div>
         

@@ -19,3 +19,14 @@
 #id_default_country option:first-child {
     color: #aab7c4;
 }
+
+
+.profile-padding {
+    padding-top: 130px;
+    padding-bottom: 130px;
+}
+
+.btn-black {
+    background-color: rgb(58, 60, 63);
+}
+
