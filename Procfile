@@ -1,1 +1,1 @@
-web: gunicorn cupid-store.wsgi:application
+web: gunicorn cupid_store.wsgi:application
