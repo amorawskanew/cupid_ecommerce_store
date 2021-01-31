@@ -77,9 +77,11 @@ def product_detail(request, product_id):
         review = Review.objects.create(product=product,
         
             content=request.POST['content'])
-        review.save()                        
+        review.save()       
 
+    
     return render(request, 'products/product_detail.html', context)
+
 
 
 
