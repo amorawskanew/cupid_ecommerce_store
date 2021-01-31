@@ -47,7 +47,7 @@ class StripeWH_Handler:
         """
         intent = event.data.object
         pid = intent.id
-        bag = intent.metadata.bag
+        cart = intent.metadata.cart
         save_info = intent.metadata.save_info
 
         billing_details = intent.charges.data[0].billing_details
@@ -116,7 +116,7 @@ class StripeWH_Handler:
                     original_cart=cart,
                     stripe_pid=pid,
                 )
-                for item_id, item_data in json.loads(bag).items():
+                for item_id, item_data in json.loads(cart).items():
                     product = Product.objects.get(id=item_id)
                     if isinstance(item_data, int):
                         order_line_item = OrderLineItem(
@@ -126,12 +126,12 @@ class StripeWH_Handler:
                         )
                         order_line_item.save()
                     else:
-                        for size, quantity in item_data['items_by_size'].items():
+                        for size, quantity in item_data.items():
                             order_line_item = OrderLineItem(
                                 order=order,
                                 product=product,
                                 quantity=quantity,
-                                product_size=size,
+                                
                             )
                             order_line_item.save()
             except Exception as e:
