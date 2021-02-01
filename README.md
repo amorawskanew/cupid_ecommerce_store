@@ -297,7 +297,7 @@ My project was first developed using Gitpod as the chosen IDE and GitHub as a re
 
 The project's GitHub repository link: https://github.com/amorawskanew/cupid_ecommerce_store_project_4
 
-The deployed project link: 
+The deployed project link: https://cupid-store.herokuapp.com/
 
 ### Heroku Deployment  
 
@@ -312,6 +312,9 @@ The deployed project link:
 * Next, I signed in to Heroku and created a new application
 * I set the region to Europe 
 * To use Postgres I went back to gitpod and install dj_database_url, and psycopg2.
+* I frose the requirements with pip3 freeze > requirements.txt
+* I went to settings.py and imported dj_database_url.
+
 * I went to Reveal Config Variables and input all the required values such as:
 
 * I logged into Heroku from my Gitpod terminal and then pushed all my commits to Heroku via $ git push Heroku master.
