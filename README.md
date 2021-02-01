@@ -45,9 +45,9 @@ You can register for your own account using your real email, or if you prefer yo
 # 6. Used Materials
 
 # 7. Deployment
-###  Github Deployment
-### Heroku Deployment
-
+### Github Deployment
+### Heroku Deployment 
+### AWS Deployment
 
 # 8. ### Credits
 ### Code
@@ -301,19 +301,25 @@ The deployed project link:
 
 ### Heroku Deployment  
 
-DEPLOYMENT TO HEROKU - STEPS
 * I started my project from creating a new repository on github and downloading Code Institute template to my workspace.
 * I created apps
 * requirements.txt file using "pip3 freeze --local > requirements.txt" command
 * Procfile file that starts with capital using "echo web: python3 app.py > Procfile" command
 * I committed both files to GitHub
+
+### Heroku Deployment 
+
 * Next, I signed in to Heroku and created a new application
 * I set the region to Europe 
+* To use Postgres I went back to gitpod and install dj_database_url, and psycopg2.
 * I went to Reveal Config Variables and input all the required values such as:
-MONGO_URI, IP, SECRET_KEY, PORT 
+
 * I logged into Heroku from my Gitpod terminal and then pushed all my commits to Heroku via $ git push Heroku master.
 * This completed the process of deploying my project to Heroku. 
+new project
 
+### AWS Deployment
+s
 # 8.Credits
 
 ### Code
