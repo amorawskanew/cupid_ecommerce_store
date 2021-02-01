@@ -298,30 +298,45 @@ My project was first developed using Gitpod as the chosen IDE and GitHub as a re
 The project's GitHub repository link: https://github.com/amorawskanew/cupid_ecommerce_store_project_4
 
 The deployed project link: https://cupid-store.herokuapp.com/
-
-### Heroku Deployment  
+ 
 
 * I started my project from creating a new repository on github and downloading Code Institute template to my workspace.
-* I created apps
-* requirements.txt file using "pip3 freeze --local > requirements.txt" command
-* Procfile file that starts with capital using "echo web: python3 app.py > Procfile" command
-* I committed both files to GitHub
+* I created my project
+* I saved all the dependencies in requirements.txt file using "pip3 freeze --local > requirements.txt" command
+* I created Procfile file that starts with capital using "echo web: python3 app.py > Procfile" command
+* I committed all the changes and pushed to github
 
 ### Heroku Deployment 
 
-* Next, I signed in to Heroku and created a new application
-* I set the region to Europe 
-* To use Postgres I went back to gitpod and install dj_database_url, and psycopg2.
-* I frose the requirements with pip3 freeze > requirements.txt
+* Next, I logged in to Heroku from my terminal by using heroku login -i 
+* I signed in to Heroku and created a new application with a unique name
+* I set the region to Europe, which is the closest to me
+* To use Postgres I went back to gitpod and installed dj_database_url, and psycopg2.
+* I froze the requirements with pip3 freeze > requirements.txt
+* In the root folder, I created a file named Procfile with the following content: web: 
+gunicorn milestone_project_final.wsgi:application
+Procfile contains a command that Heroku will run when the app starts.
 * I went to settings.py and imported dj_database_url.
 
-* I went to Reveal Config Variables and input all the required values such as:
+* 'In Heroku I went to Config Vars and set all the requied environmental variables.
 
-* I logged into Heroku from my Gitpod terminal and then pushed all my commits to Heroku via $ git push Heroku master.
-* This completed the process of deploying my project to Heroku. 
-new project
+<h2 align="center"><img src='/media/ReadMe_key.png' style="margin: 0;"></h2>
+
+* In the settings.py, I added the URL of my heroku app to the ALLOWED_HOST section (without the https):
+
+ALLOWED_HOSTS = ["cupid-store.herokuapp.com", 'localhost',]
+
+I commit all files to heroku with the following commands:
+git add . 
+git commit -m "deploy to Heroku" 
+git push heroku master
+* I made a superuser with this command python3 manage.py createsuperuser
+* I completed the deployment by pushing my project to heroku with:
+git push heroku master
+ Once deployed, I can continued to push all the changes made during further project development. 
 
 ### AWS Deployment
+* I followed Code Institute tuturial to deploy my media and all my static to AWS
 
 # 8.Credits
 
