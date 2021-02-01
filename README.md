@@ -319,7 +319,7 @@ The deployed project link:
 new project
 
 ### AWS Deployment
-s
+
 # 8.Credits
 
 ### Code
