@@ -1,7 +1,7 @@
-/* Pink background for every page*/
+/* Landing Page styling*/
 
-.pink_background {
-	background-color: rgb(255, 213, 220, 0.4);
+.pink-background {
+	background-color: rgb(255, 213, 220);
 }
 
 * {
@@ -116,7 +116,7 @@ body {
 	color: rgb(92, 96, 100);
 }
 
-/* dark grey tfor navbar icones and some text */
+/* dark grey text for navbar icones and some text */
 
 .text-icone-color {
 	color: rgb(58, 60, 63);
@@ -204,12 +204,12 @@ footer {
 
 /*styling cart page */
 
-.cart_table {
+.cart-table {
 	min-width: 400px;
 	font-size: 14px;
 }
 
-.cart_thead {
+.cart-thead {
 	font-weight: normal;
 	text-transform: uppercase;
 	letter-spacing: .2em;
@@ -235,25 +235,25 @@ footer {
 }
 
 @media (min-width: 991px) {
-	.cart_page {
+	.cart-page {
 		margin-bottom: 200px!important;
 	}
 }
 
 @media (max-width: 991px) {
-	.cart_page {
+	.cart-page {
 		margin-bottom: 140px!important;
 	}
 }
 
 @media (min-width: 991px) {
-	.cart_page {
+	.cart-page {
 		margin-bottom: 200px!important;
 	}
 }
 
 @media (max-width: 991px) {
-	.cart_page {
+	.cart-page {
 		margin-bottom: 140px!important;
 	}
 }

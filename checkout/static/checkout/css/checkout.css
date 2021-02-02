@@ -1,6 +1,5 @@
 /* styling for checkout page */
 
-Beautified CSS:
 .StripeElement,
 .stripe-style-input {
 	box-sizing: border-box;
@@ -50,7 +49,6 @@ select option[value=""] {
 }
 
 /* styling for checkout_success page*/
-Beautified CSS:
 
 #loading-overlay {
 	display: none;

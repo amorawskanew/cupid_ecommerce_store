@@ -30,15 +30,20 @@
 }
 
 body {
-    background-color: rgb(255, 213, 220, 0.4)
+    background-color: rgb(255, 213, 220)
 }
     
 .checkout-btn {
     background:  rgb(92, 96, 100);
-    color: rgb(255, 255, 255);
+    color: rgb(255, 255, 255)! important;
     border-radius: 4px; 
+    text-align: center;
 }
 
+.checkout-btn:hover {
+    background:  rgb(70, 72, 73);
+    color: rgb(255, 255, 255)! important;
+}
 </style>
 
     <div class="overlay"></div>
@@ -140,7 +145,7 @@ body {
 							</span>
 							<span class="font-weight-bold">Adjust </span>
                         </a>
-						<button id="submit-button" class=" checkout-btn" >
+						<button id="submit-button" class=" btn checkout-btn" >
 							<span class="font-weight-normal">Complete Order</span>
 							<span class="icon">
 								<i class="fas fa-cart"></i>
