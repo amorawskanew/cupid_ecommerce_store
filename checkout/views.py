@@ -2,17 +2,15 @@ from django.shortcuts import render, redirect, reverse, get_object_or_404, HttpR
 from django.views.decorators.http import require_POST
 from django.contrib import messages
 from django.conf import settings
-
 from .forms import OrderForm
 from .models import Order, OrderLineItem
-
 from products.models import Product
 from profiles.models import UserProfile
 from profiles.forms import UserProfileForm
 from cart.contexts import cart_contents
-
 import stripe
 import json
+
 
 @require_POST
 def cache_checkout_data(request):
@@ -30,6 +28,7 @@ def cache_checkout_data(request):
             processed right now. Please try again later.')
         return HttpResponse(content=e, status=400)
 
+
 def checkout(request):
     stripe_public_key = settings.STRIPE_PUBLIC_KEY
     stripe_secret_key = settings.STRIPE_SECRET_KEY
@@ -40,7 +39,7 @@ def checkout(request):
         form_data = {
             'full_name': request.POST['full_name'],
             'email': request.POST['email'],
-            
+
             'country': request.POST['country'],
             'postcode': request.POST['postcode'],
             'town_or_city': request.POST['town_or_city'],
@@ -62,12 +61,12 @@ def checkout(request):
                         )
                         order_line_item.save()
                     else:
-                        for  quantity in item_data.items():
+                        for quantity in item_data.items():
                             order_line_item = OrderLineItem(
                                 order=order,
                                 product=product,
                                 quantity=quantity,
-                                
+
                             )
                             order_line_item.save()
                 except Product.DoesNotExist:
@@ -147,7 +146,7 @@ def checkout_success(request, order_number):
         # Save the user's info
         if save_info:
             profile_data = {
-                
+
                 'default_country': order.country,
                 'default_postcode': order.postcode,
                 'default_town_or_city': order.town_or_city,

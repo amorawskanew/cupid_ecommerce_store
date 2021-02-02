@@ -1,14 +1,15 @@
-
 from django.shortcuts import render, redirect, reverse, HttpResponse, get_object_or_404
 from django.contrib import messages
 from products.models import Product
 
 # Create your views here.
 
+
 def view_cart(request):
     """ A view that renders the cart contents page """
 
     return render(request, 'cart/cart.html')
+
 
 # Add To cart changes
 def add_cart(request, item_id):
@@ -27,7 +28,7 @@ def add_cart(request, item_id):
 
     request.session['cart'] = cart
     return redirect("view_cart")
-    
+
 
 def adjust_cart(request, item_id):
     """Adjust the quantity of the specified product to the specified amount"""
@@ -35,7 +36,7 @@ def adjust_cart(request, item_id):
     product = get_object_or_404(Product, pk=item_id)
     quantity = int(request.POST.get('quantity'))
     cart = request.session.get('cart', {})
-    
+
     if quantity > 0:
         cart[item_id] = quantity
         messages.success(request, f'Updated {product.name} quantity to {cart[item_id]}')

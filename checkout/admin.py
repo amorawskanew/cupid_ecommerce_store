@@ -1,5 +1,3 @@
-
-  
 from django.contrib import admin
 from .models import Order, OrderLineItem
 
@@ -31,7 +29,4 @@ class OrderAdmin(admin.ModelAdmin):
     ordering = ('-date',)
 
 admin.site.register(Order, OrderAdmin)
-
-
-# Register your models here.
 

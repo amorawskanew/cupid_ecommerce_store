@@ -1,8 +1,5 @@
-# Create your views here.
 from django.shortcuts import redirect, render
 from django.contrib.auth import logout
-
-# Create your views here.
 
 
 def index(request):
@@ -10,13 +7,16 @@ def index(request):
 
     return render(request, 'home/index.html')
 
+
 # Redirect to logout page
 def logoutWarning(request):
     if request.method == 'POST':
         return redirect('account_login')
     return render(request, 'allauth/account/logout.html')
 
+
 # Logout user function
 def logoutUser(request):
     logout(request)
     return redirect('account_login')
+
