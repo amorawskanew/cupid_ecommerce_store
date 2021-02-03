@@ -1,6 +1,7 @@
 {% extends "account/base.html" %}
 
 {% load i18n %}
+{% load static %}
 
 {% block head_title %}{% trans "Sign Out" %}{% endblock %}
 
@@ -10,10 +11,16 @@
 .signout-padding {
     padding-top: 130px;  
 }
-.btn-signout {
-    background-color: rgb(58, 60, 63)!important;
-    border-radius: 3px !important;
+.sign-out-btn {
+    background:  rgb(92, 96, 100);
+    color: rgb(255, 255, 255)! important;
+    border-radius: 10px; 
+    text-align: center;
 }
+.sign-out-btn:hover {
+    background:  rgb(92, 96, 100);
+}
+
 </style>
 
 <div class="signout-padding">
@@ -27,8 +34,8 @@
   {% if redirect_field_value %}
   <input type="hidden" name="{{ redirect_field_name }}" value="{{ redirect_field_value }}"/>
   {% endif %}
-  <a class="btn btn-outline-black rounded-2" href="{% url 'home' %}">Cancel</a>
-  <button class=" btn-signout" type="submit">{% trans 'Sign Out' %}</button>
+  <a class="btn btn sign-out-btn" href="{% url 'home' %}">Cancel</a>
+  <button class=" btn sign-out-btn" type="submit">{% trans 'Sign Out' %}</button>
 </form>
 </div>
 

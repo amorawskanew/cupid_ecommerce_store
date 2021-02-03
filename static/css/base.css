@@ -254,18 +254,6 @@ color:rgb(247, 181, 192)!important;
 	}
 }
 
-@media (min-width: 991px) {
-	.cart-page {
-		margin-bottom: 200px!important;
-	}
-}
-
-@media (max-width: 991px) {
-	.cart-page {
-		margin-bottom: 140px!important;
-	}
-}
-
 /* ------------------------------- bootstrap toasts */
 
 .message-container {
