@@ -12,13 +12,23 @@
     padding-bottom: 130px;
 }
 
-.btn-signup {
-    background-color: rgb(58, 60, 63);
+.sign-up-btn {
+    background:  rgb(10, 34, 58)!important;
+    color: rgb(255, 255, 255)! important;
+    border-radius: 10px !important; 
+    text-align: center;
 }
-
-.pink_background {
-    background-color: pink);
-    
+.sign-up-btn:hover {
+    background:  rgb(0,0,0)!important;
+}
+.back-to-login-btn {
+    background:  rgb(92, 96, 100);
+    color: rgb(255, 255, 255)! important;
+    border-radius: 10px; 
+    text-align: center;
+}
+.back-to-login-btn:hover {
+    background:  rgb(70, 72,73)!important;
 }
 
 </style>
@@ -36,8 +46,8 @@
   {% if redirect_field_value %}
   <input type="hidden" name="{{ redirect_field_name }}" value="{{ redirect_field_value }}" />
   {% endif %}
-  <a class="btn btn-outline-black rounded-0" href="{% url 'account_login' %}">Back to Login</a>
-  <button class="btn-signup" type="submit">{% trans "Sign Up" %}</button>
+  <a class="btn back-to-login-btn" href="{% url 'account_login' %}">Back to Login</a>
+  <button class="sign-up-btn" type="submit">{% trans "Sign Up" %}</button>
 </form>
 </div>
 </wrap>

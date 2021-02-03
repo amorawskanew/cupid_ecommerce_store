@@ -11,10 +11,25 @@
 .signin-padding {
     padding-top: 130px;  
 }
-.btn-signin {
-    background-color: rgb(58, 60, 63)!important;
-    border-radius: 3px !important;
+.sign-in-btn {
+    background:  rgb(10, 34, 58)!important;
+    color: rgb(255, 255, 255)! important;
+    border-radius: 10px !important; 
+    text-align: center;
 }
+.sign-in-btn:hover {
+    background:  rgb(0,0,0)!important;
+}
+.redirect-home-btn {
+    background:  rgb(92, 96, 100);
+    color: rgb(255, 255, 255)! important;
+    border-radius: 10px; 
+    text-align: center;
+}
+.redirect-home-btn:hover {
+    background:  rgb(70, 72,73)!important;
+}
+
 </style>
 
 <hr>
@@ -52,8 +67,8 @@ for a {{ site_name }} account and sign in below:{% endblocktrans %}</p>
   {% if redirect_field_value %}
   <input type="hidden" name="{{ redirect_field_name }}" value="{{ redirect_field_value }}" />
   {% endif %}
-  <a class="btn btn-outline-black rounded-0" href="{% url 'home' %}">Home</a>
-  <button class="primaryAction" type="submit">{% trans "Sign In" %}</button>
+  <a class="btn redirect-home-btn" href="{% url 'home' %}">Home</a>
+  <button class="primaryAction sign-in-btn" type="submit">{% trans "Sign In" %}</button>
   <p class="mt-2">
     <a class="button secondaryAction" href="{% url 'account_reset_password' %}">{% trans "Forgot Password?" %}</a>
   </p>
