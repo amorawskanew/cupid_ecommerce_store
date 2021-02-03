@@ -123,8 +123,6 @@ WSGI_APPLICATION = 'cupid_store.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/3.0/ref/settings/#databases
 
-DATABASE_URL= 'postgres://ixzphtkhtpdrwn:c4e35f1211d9870eb66f1845791fcc8b450f45c5f3157e467cc79ced76339c29@ec2-34-251-118-151.eu-west-1.compute.amazonaws.com:5432/d35qpu393t58lf'
-
 if 'DATABASE_URL' in os.environ:
     DATABASES = {
         'default': dj_database_url.parse(os.environ.get('DATABASE_URL'))
