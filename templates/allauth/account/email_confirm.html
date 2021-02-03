@@ -7,6 +7,24 @@
 
 
 {% block inner_content %}
+
+<style>
+.confirmation-mail-padding {
+    padding-top: 130px;  
+}
+
+.email_confirm-out-btn {
+    background:  rgb(10, 34, 58)!important;
+    color: rgb(255, 255, 255)! important;
+    border-radius: 10px !important; 
+    text-align: center;
+}
+.email_confirm-out-btn {
+    background:  rgb(0,0,0)!important;
+}
+
+</style>
+
 <hr>
 <h2 class="logo-font mb-4">{% trans "Confirm E-mail Address" %}</h2>
 <hr>
@@ -15,11 +33,11 @@
 
 {% user_display confirmation.email_address.user as user_display %}
 
-<p>{% blocktrans with confirmation.email_address.email as email %}Please confirm that <a href="mailto:{{ email }}">{{ email }}</a> is an e-mail address for user {{ user_display }}.{% endblocktrans %}</p>
+<p class="confirmation-mail-padding" >{% blocktrans with confirmation.email_address.email as email %}Please confirm that <a href="mailto:{{ email }}">{{ email }}</a> is an e-mail address for user {{ user_display }}.{% endblocktrans %}</p>
 
 <form method="post" action="{% url 'account_confirm_email' confirmation.key %}">
 {% csrf_token %}
-    <button type="submit">{% trans 'Confirm' %}</button>
+    <button class="email_confirm-out-btn" type="submit">{% trans 'Confirm' %}</button>
 </form>
 
 {% else %}
