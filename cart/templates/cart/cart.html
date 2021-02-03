@@ -37,23 +37,31 @@ Cart
 	color: #868e96 !important;
 }
 
-.stripe-button-el {
+.continue-shopping-button {
     width: 35% !important;
     margin-left: 32%;
 	display: block !important;
 	background-color:rgb(92, 96, 100) !important;
-	margin-bottom: 5px;
+    margin-bottom: 5px;
+    border-radius: 10px;
 }
 
-.stripe-button-el:hover {
-	background-color:rgb(47, 49, 51)!important ;
+.continue-shopping-button:hover {
+	background-color:rgb(70, 72, 73)!important ;
 }
 
 
-.stripe-button-el span {
-	height: 36px !important;
-	font-family: 'Roboto', sans-serif !important;
-	font-size: 16px !important;
+.checkout-button{
+	width: 35% !important;
+    margin-left: 32%;
+	display: block !important;
+	background-color:rgb(152, 33, 81) !important;
+    margin-bottom: 5px;
+    border-radius: 10px;
+}
+
+.checkout-button:hover{
+	background-color:rgb(134, 28, 71)!important ;
 }
 
 .margin {
@@ -162,10 +170,10 @@ body {
         </table>
         <div class="center">
         <!-- add the checkout Buttone -->
-        <a href="{% url 'checkout' %}" class="stripe-button-el btn-block btn-info btn"  role="button">Checkout</a>
+        <a href="{% url 'checkout' %}" class="checkout-button btn-block btn-info btn"  role="button">Checkout</a>
         <br/>
         <a href="{% url 'products' %}" style="text-decoration: none">
-          <button type="button" class=" stripe-button-el btn btn-block bg-dark text-white margin">
+          <button type="button" class=" continue-shopping-button btn btn-block text-white margin">
             Continue Shopping
           </button>
         </a>

@@ -368,7 +368,7 @@
 			"description": "durable",
 			"price": 11.99,
 			"category": 3,
-            "image": "key_holder_1.jpeg"
+            "image": "keyholders_1.jpeg"
     }
 	},
 
@@ -381,7 +381,7 @@
 			"description": "Makes a nice small gift",
 			"price": 22.99,
 			"category": 4,
-			"image": "key_holder_2.jpeg"
+			"image": "keyholders_2.jpeg"
 		}
 	},
 	{
@@ -393,7 +393,7 @@
 			"description": "Suitable for both men and women",
 			"price": 11.99,
 			"category": 4,
-			"image": "key_holder_3.jpeg"
+			"image": "keyholders_3.jpeg"
 		}
 	},
 	{
@@ -405,7 +405,7 @@
 			"description": "Standar keyholderg",
 			"price": 11.99,
 			"category": 4,
-			"image": "key_holder_4.jpeg"
+			"image": "keyholders_4.jpeg"
 		}
 	},
 	{
@@ -417,7 +417,7 @@
 			"description": "From a new collection",
 			"price": 20.99,
 			"category": 4,
-			"image": "key_holder_5.jpeg"
+			"image": "keyholders_5.jpeg"
 		}
 	},
 	{
@@ -429,7 +429,7 @@
 			"description": "makes anice gift for friends",
 			"price": 23.99,
 			"category": 4,
-			"image": "key_holder_6.jpeg"
+			"image": "keyholders_6.jpeg"
 		}
 	},
 	{
@@ -441,7 +441,7 @@
 			"description": "For special occasion",
 			"price": 21.99,
 			"category": 4,
-			"image": "key_holder_7.jpeg"
+			"image": "keyholders_7.jpeg"
 		}
 	},
 	{
@@ -453,7 +453,7 @@
 			"description": " heavy",
 			"price": 62.99,
 			"category": 4,
-			"image": "key_holder_8.jpeg"
+			"image": "keyholders_8.jpeg"
 		}
 	},
 	{
@@ -465,7 +465,7 @@
 			"description": " heavy",
 			"price": 9.09,
 			"category": 4,
-			"image": "key_holder_9.jpeg"
+			"image": "keyholders_9.jpeg"
 		}
 	},
 	{
@@ -477,7 +477,7 @@
 			"description": " heavy",
 			"price": 5.09,
 			"category": 4,
-			"image": "key_holder_10.jpeg"
+			"image": "keyholders_10.jpeg"
 		}
 	},
 	{

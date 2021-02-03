@@ -167,17 +167,25 @@ footer {
 	padding-bottom: 8px;
 }
 
-.text-position {
-	display: flex;
-	position: fixed;
-	bottom: 0;
-	left: 0;
-	right: 0;
-	height: 50px;
-	width: 100%;
-	border-top: 1px solid white;
-	justify-content: center;
-	align-items: center;
+.text-position  {
+display:flex;
+position: fixed;
+bottom: 0;
+left: 0;
+right: 0;
+height: 50px;
+width: 100%;
+border-top: 1px solid white;
+justify-content:center;
+align-items:center; 
+}
+
+.pink-link {
+color:rgb(255, 213, 220)!important;
+}
+
+.pink-link:hover  {
+color:rgb(247, 181, 192)!important;
 }
 
 /* -------------------------------- Media Queries */
