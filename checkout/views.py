@@ -39,7 +39,6 @@ def checkout(request):
         form_data = {
             'full_name': request.POST['full_name'],
             'email': request.POST['email'],
-
             'country': request.POST['country'],
             'postcode': request.POST['postcode'],
             'town_or_city': request.POST['town_or_city'],
@@ -66,7 +65,6 @@ def checkout(request):
                                 order=order,
                                 product=product,
                                 quantity=quantity,
-
                             )
                             order_line_item.save()
                 except Product.DoesNotExist:
@@ -146,7 +144,6 @@ def checkout_success(request, order_number):
         # Save the user's info
         if save_info:
             profile_data = {
-
                 'default_country': order.country,
                 'default_postcode': order.postcode,
                 'default_town_or_city': order.town_or_city,
@@ -162,7 +159,7 @@ def checkout_success(request, order_number):
         Your order number is {order_number}. A confirmation \
         email will be sent to {order.email}.')
 
-    if 'bag' in request.session:
+    if 'cart' in request.session:
         del request.session['cart']
 
     template = 'checkout/checkout_success.html'
