@@ -40,7 +40,8 @@ You can register for your own account using your real email, or if you prefer yo
 ### Using different devices
 ###  Manual Testing
  
-# 5. Known bugs
+# 5.Notes
+### Known bugs
  
 # 6. Used Materials
  
@@ -255,8 +256,25 @@ The project has been tested on the following devices:
  
 I found it quite challenging to make my app equally responsive on all devices. It would probably require a way more time to test every single aspect of the app on many different devices.
  
-# 5. Known bugs
- 
+# 5. Notes
+### Known bugs 
+It might happen that after clicking on basket icon page takes a long time to load.
+
+### Things that need to be improved
+
+1.Css from base.css file didn't always load or loaded very slowly and for that reason I moved part of it respective html files.  But it is considered a good practiced to keep it in one place, so in further development I will eventually move it back where it belongs.
+
+2.Some of the images have a bit of black frame/lines on the edges, which doesn't look elegant, but due to time constraints they had to be left the way they are.
+
+3.Review form needs to be further developped. I actually almost finished it,but most of it got lost while I was styling buttons. 
+
+4.On all product page there is only half a 'separation line' at the top of the page, just above the first row of products.
+
+5. There is an extra empty file in my projct '1', which is empty at the moment, but I like to keep it as my notebook
+
+6. The code has been, cleaned and put through validators and formatters, but there is still a lot of room for improvement. Some parts are redandant and should be removed.
+Also, I would add more comments to make it more reader-friendly. 
+
  
 # 6. Used Materials
  
