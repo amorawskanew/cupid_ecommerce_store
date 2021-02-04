@@ -277,7 +277,7 @@ Also, I would add more comments to make it more reader-friendly.
 
  
 # 6. Used Materials
- 
+
 * Bootstrap 4 Cheat Sheet
 https://hackerthemes.com/bootstrap-cheatsheet/
 https://bootstrapcreative.com/resources/bootstrap-4-css-classes-index/
@@ -294,7 +294,7 @@ https://mdbootstrap.com/docs/standard/navigation/footer/
  
 Other Inspiration and Sources
  
-* Code Institute Ecommerce Boutique project, which I used as the main inspiration for my project. Boutique Ado is a beautifully developed app and I used it as a template for my project.
+* Code Institute Ecommerce Boutique project, which I used as the main inspiration and source of code for my project. Boutique Ado is a beautifully developed app and I based following advice of my tutors and mentor I made it my referncr material throughtout my project development.
 * StackOverflow for reference on solving similar bugs and in search for interesting code solutions
 * Youtube videos
 * Django Official Website
