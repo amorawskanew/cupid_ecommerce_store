@@ -9,7 +9,8 @@
 
 <style>
 .signin-padding {
-    padding-top: 130px;  
+    padding-top: 35px;  
+    padding-bottom: 130px;  
 }
 .sign-in-btn {
     background:  rgb(10, 34, 58)!important;
@@ -30,10 +31,16 @@
     background:  rgb(70, 72,73)!important;
 }
 
+@media (max-width: 650px) {
+  .position-center{
+    padding-left: 40px!important;
+    }
+}
 </style>
 
+<di class="mb-col-12">
 <hr>
-<div class="signin-padding">
+<div class="signin-padding mb-col-12">
 <h2 class="logo-font mb-4">{% trans "Sign In" %}</h2>
 <hr>
 
